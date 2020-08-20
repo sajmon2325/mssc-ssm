@@ -39,7 +39,7 @@ class PaymentServiceImplTest {
         StateMachine<PaymentState, PaymentEvent> sm = paymentService.preAuth(savedPaymend.getId());
 
         Payment preAuthedPayment = paymentRepository.getOne(savedPaymend.getId());
-        
+
         System.out.println(preAuthedPayment);
     }
 }
